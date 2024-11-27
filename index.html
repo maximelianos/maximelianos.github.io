@@ -48,9 +48,6 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">Selected Projects</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
-          </li>
         </ul>
       </div>
     </div>
@@ -59,11 +56,13 @@
   <header class="bg-img">
     <div class="container text-center text-white">
       <div class="img-container">
-        <img src="img/amz_cropped.jpg" class="img-round" />
+        <img src="img/avatar.jpg" class="img-round" />
       </div>
       <h1 class="title-name">MAXIM VELIKANOV</h1>
       <p class="title-description">Video Processing &nbsp; | &nbsp; Computer Vision &nbsp;</p>
       <a href="mailto:maximelianos.m@gmail.com" target="_blank" class="fa fa-envelope"></a>
+      <a href="https://www.linkedin.com/in/maxim-velikanov-77a662339/" target="_blank" class="fa fa-linkedin"></a>
+      <a href="https://github.com/maximelianos" target="_blank" class="fa fa-github"></a>
     </div>
   </header>
   <section id="about" class="bg-light">
@@ -88,20 +87,162 @@
         <div class="col-lg-8 mx-auto">
           <h2>Selected Projects</h2>
 
+          <!-- Occlusion -->
+          <div class="project-container">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+                Video processing &nbsp; | &nbsp; Optical flow &nbsp;
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Development of occlusion estimation method using a recurrent neural network architecture</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Computer Graphics and Media Lab, Moscow State University</h6>
+                <p class="card-text">
+                  Video sequence processing commonly involves seeking correspondences between the frames.
+                  Correspondences are often used for stabilization in the
+                  time domain, for example in methods for segmentation of moving objects, colorization methods, video quality estimation methods,
+                  video matting methods. So called occlusions impose a difficulty — pixels, that are present in one frame, and are absent in another.
+                  The problem of optical flow estimation is known to be tightly connected to occlusion estimation.
+                  This work proposes a neural network algorithm for occlusion estimation in video sequences based
+                  on iterative refinement and GRU memory cell. The algorithm outperforms equivalent methods on
+                  the public dataset Sintel.
+                  <br><br>
+                  Velikanov, Maxim, Alexandra Anzina, Sergey Lavrushkin, and Dmitry Vatolin. “A
+                  neural network approach for occlusion detection in video.” International Journal of Open Information Technologies
+                  8, no. 3 (2020): 1-7
+                </p>
+                <!-- Youtube Video -->
+                <!-- <p class="card-text">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe width="560" height="315" src="..."
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                </p> -->
+                <!-- Short Video -->
+                <!-- <div id="carousel-pointflowmatch" class="carousel slide" data-ride="carousel">
+                  <video width="75%" class="marginauto" controls>
+                    <source src="img/project-orca/online_cut.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video> 
+                </div> -->
+                <!-- Image Carousel -->
+                <div id="carousel-pointflowmatch" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/occlusion-preview.jpg" alt="Occlusion method scheme">
+                    </div>
+                  </div>
+                </div>
+                <!-- Links -->
+                <a href="http://injoit.org/index.php/j1/article/view/855" target="_blank" class="btn btn-primary"><i
+                    class="fa fa-file-pdf-o"></i>INJOIT 2020 paper (ru)</a>
+                <a href="https://c.gmx.net/@1380822325473057486/XOhJ23s7Rj-82xk6M7me3g" target="_blank" class="btn btn-primary"><i
+                  class="fa fa-file-pdf-o"></i>Bachelor thesis (ru)</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project End  -->
+
+          <!-- Color correction -->
+          <div class="project-container">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+                Video processing &nbsp; | &nbsp; Stereo 3D &nbsp;
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Real-World Stereo Color and Sharpness Mismatch Dataset</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Computer Graphics and Media Lab, Moscow State University</h6>
+                <p class="card-text">
+                  We propose a real-world dataset of stereoscopic videos for color-mismatch correction.
+                  It includes real-world distortions achieved using a beam splitter. Our dataset is larger than any other for this task.
+                  We compared eight color-mismatch-correction methods on artificial and real-world datasets and showed that local methods are best suited to artificial distortions and that global methods are best suited to real-world distortions. 
+                  Our efforts improved on the latest local neural-network method for color-mismatch correction in stereoscopic images, making it work faster and better on both artificial and real-world distortions.
+                  <br><br>
+                  I was the supervisor of this project.
+                </p>
+                <!-- Image Carousel -->
+                <div id="carousel-pointflowmatch" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/colorcorrection-preview.webp" alt="Color correction method scheme">
+                    </div>
+                  </div>
+                </div>
+                <!-- Links -->
+                <a href="https://videoprocessing.ai/datasets/stereo-mismatch.html" target="_blank" class="btn btn-primary"><i
+                  class="fa fa-inline fa-link"></i>Project website</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project End  -->
+
+          <!-- Object detector accuracy -->
+          <div class="project-container">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+                Video processing &nbsp;  | &nbsp; Object detection &nbsp;
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Development of a method for prediction of accuracy of neural network object detection models</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Computer Graphics and Media Lab, Moscow State University</h6>
+                <p class="card-text">
+                  In view of object detection on compressed videosequences, a mean of input video quality assessment
+                  with respect to detection, and not human vision, is required. Conventional video codecs are
+                  based on high frequency stripping, which allows to balance the compression rate and visual appearance.
+                  Many metrics exist for compressed video quality assessment, however they are not applicable
+                  for prediction of object detection quality.
+                </p>
+                <!-- Image Carousel -->
+                <div id="carousel-pointflowmatch" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/object-detection-preview.jpg" alt="Color correction method scheme">
+                    </div>
+                  </div>
+                </div>
+                <!-- Links -->
+                <a href="https://c.gmx.net/@1380822325473057486/5csoc9mYTre8-7YavtjkMw" target="_blank" class="btn btn-primary"><i
+                  class="fa fa-file-pdf-o"></i>Master thesis (ru)</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project End  -->
+
+          <!-- Image quality metric hacking -->
+          <div class="project-container">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+                Video processing &nbsp;  | &nbsp; Image quality metrics &nbsp;
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">MSU Metrics Robustness Benchmark</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Computer Graphics and Media Lab, Moscow State University</h6>
+                <p class="card-text">
+                  Nowadays neural-network-based image- and video-quality metrics show better performance compared to traditional methods. However, they also became more vulnerable to adversarial attacks that increase metrics’ scores without improving visual quality. The existing benchmarks of quality metrics compare their performance in terms of correlation with subjective quality and calculation time. However, the adversarial robustness of image-quality metrics is also an area worth researching. In this paper, we analyse modern metrics' robustness to different adversarial attacks. We adopted adversarial attacks from computer vision tasks and compared attacks' efficiency against 15 no-reference image/video-quality metrics. Some metrics showed high resistance to adversarial attacks which makes their usage in benchmarks safer than vulnerable metrics. The benchmark accepts new metrics submissions for researchers who want to make their metrics more robust to attacks or to find such metrics for their needs.
+                  <br><br>
+                  In this project, I designed an interface to apply gradient descent to any available image quality metrics, and implemented hacking with 9 attacks.
+                </p>
+                <!-- Image Carousel -->
+                <div id="carousel-pointflowmatch" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/hacking-preview.jpg" alt="Color correction method scheme">
+                    </div>
+                  </div>
+                </div>
+                <!-- Links -->
+                <a href="https://videoprocessing.ai/benchmarks/metrics-robustness.html" target="_blank" class="btn btn-primary"><i
+                  class="fa fa-inline fa-link"></i>Project website</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project End  -->
+
           
           <!-- Project End  -->
 
 
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="publications" class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Publications</h2>
         </div>
       </div>
     </div>

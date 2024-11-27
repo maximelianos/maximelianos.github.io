@@ -200,6 +200,16 @@ li{
   text-align: left;
 }
 
+/* small button */
+.fa-inline {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  width: 30px;
+  text-align: left;
+}
+
+
 .project-container {
   margin-top: 20px;
 }
