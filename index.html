@@ -46,7 +46,10 @@
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Selected Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#research">Research work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#study">Study projects</a>
           </li>
         </ul>
       </div>
@@ -81,11 +84,11 @@
     </div>
   </section>
 
-  <section id="projects">
+  <section id="research">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Selected Projects</h2>
+          <h2>Research work</h2>
 
           <!-- Occlusion -->
           <div class="project-container">
@@ -148,7 +151,7 @@
           <div class="project-container">
             <div class="card" style="width: 100%;">
               <div class="card-header">
-                Video processing &nbsp; | &nbsp; Stereo 3D &nbsp;
+                Video processing &nbsp; | &nbsp; Stereoscopic 3D video &nbsp;
               </div>
               <div class="card-body">
                 <h5 class="card-title">Real-World Stereo Color and Sharpness Mismatch Dataset</h5>
@@ -221,7 +224,7 @@
                 <p class="card-text">
                   Nowadays neural-network-based image- and video-quality metrics show better performance compared to traditional methods. However, they also became more vulnerable to adversarial attacks that increase metrics’ scores without improving visual quality. The existing benchmarks of quality metrics compare their performance in terms of correlation with subjective quality and calculation time. However, the adversarial robustness of image-quality metrics is also an area worth researching. In this paper, we analyse modern metrics' robustness to different adversarial attacks. We adopted adversarial attacks from computer vision tasks and compared attacks' efficiency against 15 no-reference image/video-quality metrics. Some metrics showed high resistance to adversarial attacks which makes their usage in benchmarks safer than vulnerable metrics. The benchmark accepts new metrics submissions for researchers who want to make their metrics more robust to attacks or to find such metrics for their needs.
                   <br><br>
-                  In this project, I designed an interface to apply gradient descent to any available image quality metrics, and implemented hacking with 9 attacks.
+                  In this project, I designed an interface to apply gradient descent to any image quality metric, and implemented hacking with 9 attacks.
                 </p>
                 <!-- Image Carousel -->
                 <div id="carousel-pointflowmatch" class="carousel slide" data-ride="carousel">
@@ -239,10 +242,129 @@
           </div>
           <!-- Project End  -->
 
-          
+          <!-- VR180 -->
+          <div class="project-container">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+                Video processing &nbsp;  | &nbsp; Stereoscopic VR180 &nbsp;
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">VQMT3D Project: Report 12 on VR180 Quality Analysis</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Computer Graphics and Media Lab, Moscow State University</h6>
+                <p class="card-text">
+                This is the 12th report of the VQMT3D project. It focuses on a detailed and thorough overall comparison of stereoscopic VR180 videos. 
+                To conduct a large-scale VR180-video analysis, we collected 1,000 videos from YouTube. 
+                Most of the videos have 10,000 to 100,000 views and are 5 to 10 minutes long. 
+                We performed analysis of consistency between the two stereo views, such as vertical parallax, scale mismatch, rotation mismatch and many more.
+                <br><br>
+                I took part in the analysis and publication of results.
+                </p>
+                <!-- Image Carousel -->
+                <div id="carousel-pointflowmatch" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/vr180-preview.jpg" alt="Color correction method scheme">
+                    </div>
+                  </div>
+                </div>
+                <!-- Links -->
+                <a href="https://videoprocessing.ai/stereo_quality/report12.html" target="_blank" class="btn btn-primary"><i
+                  class="fa fa-inline fa-link"></i>Report website</a>
+              </div>
+            </div>
+          </div>
           <!-- Project End  -->
 
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="study">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Study projects</h2>
+
+          <!-- Stereo matching -->
+          <div class="project-container">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+                Computer vision &nbsp;  | &nbsp; Stereo matching &nbsp;
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Stereo matching</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Computer Graphics and Media Lab, Moscow State University</h6>
+                <p class="card-text">
+                I reimplemented the paper "Efficient Deep Learning for Stereo Matching" in PyTorch from scratch and trained the model on KITTI 2015 autonomous driving dataset.
+                The python notebook was used for teaching "3D computer vision" course.
+                </p>
+                <!-- Image Carousel -->
+                <div id="carousel-pointflowmatch" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/stereo-matching-preview.jpg" alt="Color correction method scheme">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- Project End  -->
+          
+          <!-- Style transfer -->
+          <div class="project-container">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+                Computer vision &nbsp;  | &nbsp; Style transfer &nbsp;
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Style transfer</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Computer Graphics and Media Lab, Moscow State University</h6>
+                <p class="card-text">
+                I implemented optimization-based style transfer using correlation between VGG feature channels. The correlation matrix of the generated image
+                is optimized to be similar to the style image.
+                </p>
+                <!-- Image Carousel -->
+                <div class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/style-preview.jpg" alt="Color correction method scheme">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- Project End  -->
+
+          <!-- Image captioning -->
+          <div class="project-container">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+                Computer vision &nbsp;  | &nbsp; Image captioning &nbsp;
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Image captioning with attention</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Computer Graphics and Media Lab, Moscow State University</h6>
+                <p class="card-text">
+                I wrote an attention layer and a model that extracts text tokens and compares them with image tokens. The model is trained to output a caption for the image.
+                </p>
+                <!-- Image Carousel -->
+                <div class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/caption-preview.jpg" alt="Color correction method scheme">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- Project End  -->
         </div>
       </div>
     </div>
