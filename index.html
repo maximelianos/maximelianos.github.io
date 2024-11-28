@@ -75,6 +75,10 @@
           <h2>About</h2>
           <p class="lead">
             <!-- TODO biography -->
+          Hi! I am Maxim, I have worked in the computer vision and video processing field since 2019
+          and completed Bachelor and Master degrees in Lomonosov Moscow State University. Our team works in a narrow field, which
+          sets a lot of technical and scientific challenges that are fun to overcome. I participated in a plethora of practical projects,
+          and supervised one of them - see below. Currently I continue research at University of Freiburg in the Computer Vision lab.
           </p>
           <div class="resume">
             <!-- TODO resume -->
@@ -290,7 +294,7 @@
           <div class="project-container">
             <div class="card" style="width: 100%;">
               <div class="card-header">
-                Computer vision &nbsp;  | &nbsp; Stereo matching &nbsp;
+                3D computer vision &nbsp;
               </div>
               <div class="card-body">
                 <h5 class="card-title">Stereo matching</h5>
@@ -317,14 +321,14 @@
           <div class="project-container">
             <div class="card" style="width: 100%;">
               <div class="card-header">
-                Computer vision &nbsp;  | &nbsp; Style transfer &nbsp;
+                Computer vision &nbsp;
               </div>
               <div class="card-body">
                 <h5 class="card-title">Style transfer</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Computer Graphics and Media Lab, Moscow State University</h6>
                 <p class="card-text">
                 I implemented optimization-based style transfer using correlation between VGG feature channels. The correlation matrix of the generated image
-                is optimized to be similar to the style image.
+                is optimized to be similar to the matrix of the style image.
                 </p>
                 <!-- Image Carousel -->
                 <div class="carousel slide" data-ride="carousel">
@@ -344,13 +348,14 @@
           <div class="project-container">
             <div class="card" style="width: 100%;">
               <div class="card-header">
-                Computer vision &nbsp;  | &nbsp; Image captioning &nbsp;
+                Computer vision &nbsp;
               </div>
               <div class="card-body">
                 <h5 class="card-title">Image captioning with attention</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Computer Graphics and Media Lab, Moscow State University</h6>
                 <p class="card-text">
-                I wrote an attention layer and a model that extracts text tokens and compares them with image tokens. The model is trained to output a caption for the image.
+                Extracting VGG features and training LSTM with attention to the image.
+                I implemented the attention layer, the LSTM and the text decoder.
                 </p>
                 <!-- Image Carousel -->
                 <div class="carousel slide" data-ride="carousel">
@@ -360,6 +365,35 @@
                     </div>
                   </div>
                 </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- Project End  -->
+
+          <!-- CUDA CNN -->
+          <div class="project-container">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+                Computer Vision &nbsp; | &nbsp; C++ CUDA &nbsp;
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Convolutional neural network in C++ CUDA</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Computer Graphics and Media Lab, Moscow State University</h6>
+                <p class="card-text">
+                Neural encoder-decoder image denoiser inference written in C++/CUDA completely from scratch. Model is trained with Python Keras, weights are exported in text format for inference in C++.
+                </p>
+                <!-- Image Carousel -->
+                <div class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/autoencoder-preview.jpg" alt="Color correction method scheme">
+                    </div>
+                  </div>
+                </div>
+                <!-- Links -->
+                <a href="https://github.com/maximelianos/cudacnn" target="_blank" class="btn btn-primary"><i
+                  class="fa fa-inline fa-link"></i>Github</a>
 
               </div>
             </div>
