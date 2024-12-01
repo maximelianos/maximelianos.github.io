@@ -75,10 +75,12 @@
           <h2>About</h2>
           <p class="lead">
             <!-- TODO biography -->
-          Hi! I am Maxim, I have worked in the computer vision and video processing field since 2019
-          and completed Bachelor and Master degrees in Lomonosov Moscow State University. Our team works in a narrow field, which
-          sets a lot of technical and scientific challenges that are fun to overcome. I participated in a plethora of practical projects,
-          and supervised one of them - see below. Currently I continue research at University of Freiburg in the Computer Vision lab.
+            Hi! I am Maxim, I have worked in <a href="https://videoprocessing.ai/about/">Computer Graphics and Media Lab</a>, Moscow State University, from 2019 to 2023,
+            one of the best labs in the world in the field of video processing.
+            I obtained there an excellent theoretical and practical experience,
+            completed Bachelor and Master degrees,
+            contributed to many projects with real-life applications.
+            Currently I continue research in computer vision for robotics in University of Freiburg, <a href="https://lmb.informatik.uni-freiburg.de/people/brox/index.html">Computer Vision Lab</a>.
           </p>
           <div class="resume">
             <!-- TODO resume -->
@@ -93,6 +95,42 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Research work</h2>
+          <!-- Image quality metric hacking -->
+          <div class="project-container">
+            <div class="card" style="width: 100%;">
+              <div class="card-header">
+                Video processing &nbsp;  | &nbsp; Image quality metrics &nbsp;
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">MSU Metrics Robustness Benchmark</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Computer Graphics and Media Lab, Moscow State University</h6>
+                <p class="card-text">
+                  Nowadays neural-network-based image- and video-quality metrics show better performance compared to traditional methods. 
+                  However, they also became more vulnerable to adversarial attacks that increase metrics’ scores without improving visual quality. 
+                  The existing benchmarks of quality metrics compare their performance in terms of correlation with subjective quality and calculation time. 
+                  However, the adversarial robustness of image-quality metrics is also an area worth researching. 
+                  In this paper, we analyse modern metrics' robustness to different adversarial attacks. 
+                  We adopted adversarial attacks from computer vision tasks and compared attacks' efficiency against 15 no-reference image/video-quality metrics. 
+                  Some metrics showed high resistance to adversarial attacks which makes their usage in benchmarks safer than vulnerable metrics. 
+                  The benchmark accepts new metrics submissions for researchers who want to make their metrics more robust to attacks or to find such metrics for their needs.
+                  <br><br>
+                  In this project, I designed an interface to apply gradient descent to any image quality metric, and implemented hacking with 9 attacks.
+                </p>
+                <!-- Image Carousel -->
+                <div id="carousel-pointflowmatch" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/hacking-preview.jpg" alt="Color correction method scheme">
+                    </div>
+                  </div>
+                </div>
+                <!-- Links -->
+                <a href="https://videoprocessing.ai/benchmarks/metrics-robustness.html" target="_blank" class="btn btn-primary"><i
+                  class="fa fa-inline fa-link"></i>Project website</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project End  -->
 
           <!-- Occlusion -->
           <div class="project-container">
@@ -166,7 +204,7 @@
                   We compared eight color-mismatch-correction methods on artificial and real-world datasets and showed that local methods are best suited to artificial distortions and that global methods are best suited to real-world distortions. 
                   Our efforts improved on the latest local neural-network method for color-mismatch correction in stereoscopic images, making it work faster and better on both artificial and real-world distortions.
                   <br><br>
-                  I was the supervisor of this project.
+                  I supervised this project.
                 </p>
                 <!-- Image Carousel -->
                 <div id="carousel-pointflowmatch" class="carousel slide" data-ride="carousel">
@@ -177,6 +215,8 @@
                   </div>
                 </div>
                 <!-- Links -->
+                <a href="https://arxiv.org/abs/2303.06657v2" target="_blank" class="btn btn-primary"><i
+                  class="fa fa-file-pdf-o"></i>Arxiv</a>
                 <a href="https://videoprocessing.ai/datasets/stereo-mismatch.html" target="_blank" class="btn btn-primary"><i
                   class="fa fa-inline fa-link"></i>Project website</a>
               </div>
@@ -216,35 +256,6 @@
           </div>
           <!-- Project End  -->
 
-          <!-- Image quality metric hacking -->
-          <div class="project-container">
-            <div class="card" style="width: 100%;">
-              <div class="card-header">
-                Video processing &nbsp;  | &nbsp; Image quality metrics &nbsp;
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">MSU Metrics Robustness Benchmark</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Computer Graphics and Media Lab, Moscow State University</h6>
-                <p class="card-text">
-                  Nowadays neural-network-based image- and video-quality metrics show better performance compared to traditional methods. However, they also became more vulnerable to adversarial attacks that increase metrics’ scores without improving visual quality. The existing benchmarks of quality metrics compare their performance in terms of correlation with subjective quality and calculation time. However, the adversarial robustness of image-quality metrics is also an area worth researching. In this paper, we analyse modern metrics' robustness to different adversarial attacks. We adopted adversarial attacks from computer vision tasks and compared attacks' efficiency against 15 no-reference image/video-quality metrics. Some metrics showed high resistance to adversarial attacks which makes their usage in benchmarks safer than vulnerable metrics. The benchmark accepts new metrics submissions for researchers who want to make their metrics more robust to attacks or to find such metrics for their needs.
-                  <br><br>
-                  In this project, I designed an interface to apply gradient descent to any image quality metric, and implemented hacking with 9 attacks.
-                </p>
-                <!-- Image Carousel -->
-                <div id="carousel-pointflowmatch" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img class="d-block w-100" src="img/hacking-preview.jpg" alt="Color correction method scheme">
-                    </div>
-                  </div>
-                </div>
-                <!-- Links -->
-                <a href="https://videoprocessing.ai/benchmarks/metrics-robustness.html" target="_blank" class="btn btn-primary"><i
-                  class="fa fa-inline fa-link"></i>Project website</a>
-              </div>
-            </div>
-          </div>
-          <!-- Project End  -->
 
           <!-- VR180 -->
           <div class="project-container">
