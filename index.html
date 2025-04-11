@@ -64,7 +64,7 @@
       <h1 class="title-name">MAXIM VELIKANOV</h1>
       <p class="title-description">Video Processing &nbsp; | &nbsp; Computer Vision &nbsp;</p>
       <a href="mailto:maximelianos.m@gmail.com" target="_blank" class="fa fa-envelope"></a>
-      <a href="https://www.linkedin.com/in/maxim-velikanov-77a662339/" target="_blank" class="fa fa-linkedin"></a>
+      <!-- <a href="https://www.linkedin.com/in/maxim-velikanov-77a662339/" target="_blank" class="fa fa-linkedin"></a> -->
       <a href="https://github.com/maximelianos" target="_blank" class="fa fa-github"></a>
     </div>
   </header>
@@ -75,11 +75,14 @@
           <h2>About</h2>
           <p class="lead">
             <!-- TODO biography -->
-            Hi! I am Maxim, I have worked in Moscow State University, <a href="https://videoprocessing.ai/about/">Computer Graphics and Media Lab</a>, 
-            one of the best labs in the world in the field of video processing, from 2019 to 2023.
-            I obtained excellent theoretical and practical experience there,
-            completed Bachelor and Master degrees,
-            contributed to many projects with real-life applications.
+            Hi! I am Maxim, I have completed master's degree in 2023 in Lomonosov Moscow State University
+            with <a href="https://videoprocessing.ai/about/">Computer Graphics and Media Lab</a>, 
+            one of the best labs in the world in the field of video processing.
+            I obtained there excellent practical experience in fields of
+            motion estimation and optical flow,
+            prediction of object detector accuracy,
+            correction of stereo video filming artifacts and
+            attacks on image quality metrics.
             Currently I continue research in computer vision for robotics in University of Freiburg, 
             <a href="https://lmb.informatik.uni-freiburg.de/people/brox/index.html">Computer Vision Lab</a>.
           </p>
@@ -95,44 +98,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Research work</h2>
-          <!-- Image quality metric hacking -->
-          <div class="project-container">
-            <div class="card" style="width: 100%;">
-              <div class="card-header">
-                Video processing &nbsp;  | &nbsp; Image quality metrics &nbsp;
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">MSU Metrics Robustness Benchmark</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Computer Graphics and Media Lab, Moscow State University</h6>
-                <p class="card-text">
-                  Nowadays neural-network-based image- and video-quality metrics show better performance compared to traditional methods. 
-                  However, they also became more vulnerable to adversarial attacks that increase metrics’ scores without improving visual quality. 
-                  The existing benchmarks of quality metrics compare their performance in terms of correlation with subjective quality and calculation time. 
-                  However, the adversarial robustness of image-quality metrics is also an area worth researching. 
-                  In this paper, we analyse modern metrics' robustness to different adversarial attacks. 
-                  We adopted adversarial attacks from computer vision tasks and compared attacks' efficiency against 15 no-reference image/video-quality metrics. 
-                  Some metrics showed high resistance to adversarial attacks which makes their usage in benchmarks safer than vulnerable metrics. 
-                  The benchmark accepts new metrics submissions for researchers who want to make their metrics more robust to attacks or to find such metrics for their needs.
-                  <br><br>
-                  In this project I designed an interface to apply gradient descent to any image quality metric and implemented hacking with 9 attacks.
-                </p>
-                <!-- Image Carousel -->
-                <div id="carousel-pointflowmatch" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img class="d-block w-100" src="img/hacking-preview.jpg" alt="Color correction method scheme">
-                    </div>
-                  </div>
-                </div>
-                <p class="text-center" style="font-style: italic;">The metric score increases after attacking and distorting the image</p>
-                <!-- Links -->
-                <a href="https://videoprocessing.ai/benchmarks/metrics-robustness.html" target="_blank" class="btn btn-primary"><i
-                  class="fa fa-inline fa-link"></i>Project website</a>
-              </div>
-            </div>
-          </div>
-          <!-- Project End  -->
+          <h2>Research works</h2>
 
           <!-- Occlusion -->
           <div class="project-container">
@@ -153,6 +119,7 @@
                   on iterative refinement and GRU memory cell. The algorithm outperforms equivalent methods on
                   the public dataset Sintel.
                   <br><br>
+                  This was my bachelor thesis. The results were published in: <br>
                   Velikanov, Maxim, Alexandra Anzina, Sergey Lavrushkin, and Dmitry Vatolin. “A
                   neural network approach for occlusion detection in video.” International Journal of Open Information Technologies
                   8, no. 3 (2020): 1-7
@@ -192,37 +159,35 @@
           </div>
           <!-- Project End  -->
 
-          <!-- Color correction -->
+          <!-- VR180 -->
           <div class="project-container">
             <div class="card" style="width: 100%;">
               <div class="card-header">
-                Video processing &nbsp; | &nbsp; Stereoscopic 3D video &nbsp;
+                Video processing &nbsp;  | &nbsp; Stereoscopic VR180 &nbsp;
               </div>
               <div class="card-body">
-                <h5 class="card-title">Real-World Stereo Color and Sharpness Mismatch Dataset</h5>
+                <h5 class="card-title">VQMT3D Project: Report 12 on VR180 Quality Analysis</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Computer Graphics and Media Lab, Moscow State University</h6>
                 <p class="card-text">
-                  We propose a real-world dataset of stereoscopic videos for color-mismatch correction.
-                  It includes real-world distortions achieved using a beam splitter. Our dataset is larger than any other for this task.
-                  We compared eight color-mismatch-correction methods on artificial and real-world datasets and showed that local methods are best suited to artificial distortions and that global methods are best suited to real-world distortions. 
-                  Our efforts improved on the latest local neural-network method for color-mismatch correction in stereoscopic images, making it work faster and better on both artificial and real-world distortions.
-                  <br><br>
-                  I supervised this project.
+                This is the 12th report of the VQMT3D project. It focuses on a detailed and thorough overall comparison of stereoscopic VR180 videos. 
+                To conduct a large-scale VR180-video analysis, we collected 1,000 videos from YouTube. 
+                Most of the videos have 10,000 to 100,000 views and are 5 to 10 minutes long. 
+                We performed analysis of consistency between the two stereo views, such as vertical parallax, scale mismatch, rotation mismatch and many more.
+                <br><br>
+                I took part in the artifacts analysis and publication of results.
                 </p>
                 <!-- Image Carousel -->
                 <div id="carousel-pointflowmatch" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img class="d-block w-100" src="img/colorcorrection-preview.webp" alt="Color correction method scheme">
+                      <img class="d-block w-100" src="img/vr180-preview.jpg" alt="Color correction method scheme">
                     </div>
                   </div>
                 </div>
-                <p class="text-center" style="font-style: italic;">Dataset filming and postprocessing pipeline</p>
+                <p class="text-center" style="font-style: italic;">An enlarged fragment with focus mismatch between views</p>
                 <!-- Links -->
-                <a href="https://arxiv.org/abs/2303.06657v2" target="_blank" class="btn btn-primary"><i
-                  class="fa fa-file-pdf-o"></i>Arxiv</a>
-                <a href="https://videoprocessing.ai/datasets/stereo-mismatch.html" target="_blank" class="btn btn-primary"><i
-                  class="fa fa-inline fa-link"></i>Project website</a>
+                <a href="https://videoprocessing.ai/stereo_quality/report12.html" target="_blank" class="btn btn-primary"><i
+                  class="fa fa-inline fa-link"></i>Report website</a>
               </div>
             </div>
           </div>
@@ -244,6 +209,8 @@
                   Many metrics exist for compressed video quality assessment, however they are not applicable
                   for prediction of object detection quality. The proposed method shows better
                   correlation with the detector performance than existing approaches.
+                  <br><br>
+                  This was my master's thesis as part of a research contract with Huawei.
                 </p>
                 <!-- Image Carousel -->
                 <div id="carousel-pointflowmatch" class="carousel slide" data-ride="carousel">
@@ -263,36 +230,39 @@
           </div>
           <!-- Project End  -->
 
-
-          <!-- VR180 -->
+          <!-- Image quality metric hacking -->
           <div class="project-container">
             <div class="card" style="width: 100%;">
               <div class="card-header">
-                Video processing &nbsp;  | &nbsp; Stereoscopic VR180 &nbsp;
+                Video processing &nbsp;  | &nbsp; Image quality metrics &nbsp;
               </div>
               <div class="card-body">
-                <h5 class="card-title">VQMT3D Project: Report 12 on VR180 Quality Analysis</h5>
+                <h5 class="card-title">MSU Metrics Robustness Benchmark</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Computer Graphics and Media Lab, Moscow State University</h6>
                 <p class="card-text">
-                This is the 12th report of the VQMT3D project. It focuses on a detailed and thorough overall comparison of stereoscopic VR180 videos. 
-                To conduct a large-scale VR180-video analysis, we collected 1,000 videos from YouTube. 
-                Most of the videos have 10,000 to 100,000 views and are 5 to 10 minutes long. 
-                We performed analysis of consistency between the two stereo views, such as vertical parallax, scale mismatch, rotation mismatch and many more.
-                <br><br>
-                I took part in the analysis and publication of results.
+                  Nowadays neural-network-based image- and video-quality metrics show better performance compared to traditional methods. 
+                  However, they also became more vulnerable to adversarial attacks that increase metrics’ scores without improving visual quality. 
+                  The existing benchmarks of quality metrics compare their performance in terms of correlation with subjective quality and calculation time. 
+                  However, the adversarial robustness of image-quality metrics is also an area worth researching. 
+                  In this paper, we analyse modern metrics' robustness to different adversarial attacks. 
+                  We adopted adversarial attacks from computer vision tasks and compared attacks' efficiency against 15 no-reference image/video-quality metrics. 
+                  Some metrics showed high resistance to adversarial attacks which makes their usage in benchmarks safer than vulnerable metrics. 
+                  The benchmark accepts new metrics submissions for researchers who want to make their metrics more robust to attacks or to find such metrics for their needs.
+                  <br><br>
+                  In this project I designed an interface to apply gradient descent to any image quality metric and implemented hacking with 9 attacks.
                 </p>
                 <!-- Image Carousel -->
                 <div id="carousel-pointflowmatch" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img class="d-block w-100" src="img/vr180-preview.jpg" alt="Color correction method scheme">
+                      <img class="d-block w-100" src="img/hacking-preview.jpg" alt="Color correction method scheme">
                     </div>
                   </div>
                 </div>
-                <p class="text-center" style="font-style: italic;">An example visualisation of enlarged fragment with focus mismatch between views</p>
+                <p class="text-center" style="font-style: italic;">The metric score increases after attacking and distorting the image</p>
                 <!-- Links -->
-                <a href="https://videoprocessing.ai/stereo_quality/report12.html" target="_blank" class="btn btn-primary"><i
-                  class="fa fa-inline fa-link"></i>Report website</a>
+                <a href="https://videoprocessing.ai/benchmarks/metrics-robustness.html" target="_blank" class="btn btn-primary"><i
+                  class="fa fa-inline fa-link"></i>Project website</a>
               </div>
             </div>
           </div>
@@ -320,7 +290,7 @@
                 <h6 class="card-subtitle mb-2 text-muted">Computer Graphics and Media Lab, Moscow State University</h6>
                 <p class="card-text">
                 I reimplemented the paper "Efficient Deep Learning for Stereo Matching" in PyTorch from scratch and trained the model on KITTI 2015 autonomous driving dataset.
-                The python notebook implementation was used to teach the "3D computer vision" course.
+                The python notebook was used to teach the "3D computer vision" course.
                 </p>
                 <!-- Image Carousel -->
                 <div id="carousel-pointflowmatch" class="carousel slide" data-ride="carousel">
@@ -331,6 +301,10 @@
                   </div>
                 </div>
                 <p class="text-center" style="font-style: italic;">Predicted disparity map</p>
+
+                <!-- Links -->
+                <a href="https://github.com/maximelianos/computer_vision" target="_blank" class="btn btn-primary"><i
+                  class="fa fa-inline fa-link"></i>Github</a>
 
               </div>
             </div>
@@ -358,6 +332,11 @@
                     </div>
                   </div>
                 </div>
+                <p class="text-center" style="font-style: italic;">Generated from a content image and a style image</p>
+
+                <!-- Links -->
+                <a href="https://github.com/maximelianos/computer_vision" target="_blank" class="btn btn-primary"><i
+                  class="fa fa-inline fa-link"></i>Github</a>
 
               </div>
             </div>
@@ -385,7 +364,11 @@
                     </div>
                   </div>
                 </div>
-                <p class="text-center" style="font-style: italic;">Attention maps for each of the words</p>
+                <p class="text-center" style="font-style: italic;">Attention maps for each word</p>
+
+                <!-- Links -->
+                <a href="https://github.com/maximelianos/computer_vision" target="_blank" class="btn btn-primary"><i
+                  class="fa fa-inline fa-link"></i>Github</a>
 
               </div>
             </div>
@@ -402,7 +385,7 @@
                 <h5 class="card-title">Convolutional neural network in C++ CUDA</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Computer Graphics and Media Lab, Moscow State University</h6>
                 <p class="card-text">
-                Neural encoder-decoder image denoiser inference written in C++/CUDA completely from scratch. Model is trained with Python Keras, weights are exported in text format for inference in C++.
+                Neural encoder-decoder image denoiser inference written in C++/CUDA from scratch. Model is trained with Python Keras, weights are exported in text format for inference in C++.
                 </p>
                 <!-- Image Carousel -->
                 <div class="carousel slide" data-ride="carousel">
@@ -414,7 +397,7 @@
                 </div>
                 <p class="text-center" style="font-style: italic;">Denoised MNIST images</p>
                 <!-- Links -->
-                <a href="https://github.com/maximelianos/cudacnn" target="_blank" class="btn btn-primary"><i
+                <a href="https://github.com/maximelianos/computer_graphics/tree/main/cudacnn" target="_blank" class="btn btn-primary"><i
                   class="fa fa-inline fa-link"></i>Github</a>
 
               </div>

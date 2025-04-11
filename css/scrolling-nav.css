@@ -78,10 +78,9 @@ section {
 }
 
 .bg-img {
-  background-image: url("../img/bulbs_inverted.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: white;
+  background-color: rgb(231, 231, 231);
   background-position: top;
 }
 
